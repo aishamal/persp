@@ -1,0 +1,17 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.PerspectiveViewer {
+  width: 800px;
+  height: 800px;
+  position: relative;
+
+  margin: 0 auto;
+}
+
+.PerspectiveViewer perspective-viewer {
+  width: 40%;
+  height: 100%;
+}

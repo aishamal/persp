@@ -1,0 +1,51 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.PerspectiveViewerRow {
+  display: flex;
+}
+
+.PerspectiveViewer {
+  /* width: 150px; */
+  width: calc((100% - (var(--table-count) - 1) * var(--table-spacing)) / var(--table-count));
+  height: 800px;
+
+  /* flex: 1; */
+  /* margin-right: 30px; Add spacing between tables */
+  margin-right: var(--table-spacing);
+
+  /* border: 1px solid black; */
+}
+
+.Pers{
+  width: 60%;
+  border: 1px solid black;
+}
+
+.PerspectiveViewer perspective-viewer {
+  /* width: 110%; Add spacing between table and configure option */
+  width: 60%; /* Add spacing between table and configure option */
+  height: 100%;
+  border: 1px solid black;
+}
+.show-tables-button {
+  background-color: #4285f4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.show-tables-button:hover {
+  background-color: #2a75e2;
+}
+
+.show-tables-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
